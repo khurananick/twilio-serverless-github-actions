@@ -23,6 +23,7 @@ jobs:
         run: |
           npm install
           npm run deploy -- --account-sid ${{secrets.ACCOUNT_SID}} --auth-token ${{secrets.AUTH_TOKEN}} --override-existing-project
+          npm run jest
         env:
           CI: true
 
